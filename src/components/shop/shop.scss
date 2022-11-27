@@ -1,0 +1,36 @@
+@import '../../style.scss';
+
+.shop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .shopDetails {
+    width: 90%;
+    display: flex;
+    gap: 200px;
+    justify-content: space-between;
+    align-items: center;
+
+    .dates {
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .detailItem {
+      flex: 1;
+      // justify-content: space-between;
+
+      .others {
+        color: gray;
+        font-size: 12px;
+      }
+    }
+
+    .shopName {
+      font-weight: 500;
+    }
+  }
+}

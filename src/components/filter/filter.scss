@@ -1,0 +1,36 @@
+@import '../../style.scss';
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  @include mobile {
+    width: 100%;
+    margin-top: 10px;
+  }
+  @include tablet {
+    padding: 20px;
+  }
+
+  .filterContainer {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+    @include mobile {
+      padding: 5px;
+      width: 100%;
+    }
+    @include tablet {
+      width: 100%;
+    }
+
+    span {
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+}

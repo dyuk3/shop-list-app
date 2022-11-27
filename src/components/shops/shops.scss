@@ -1,0 +1,87 @@
+@import '../../style.scss';
+
+.shops {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+
+  @include mobile {
+    padding: 10px;
+  }
+  @include tablet {
+    padding: 10px;
+  }
+  h2 {
+    margin: 20px;
+    padding: 20px;
+    @include mobile {
+      margin: 10px;
+      padding: 10px;
+    }
+    @include tablet {
+      padding: 10px;
+      margin: 10px;
+    }
+  }
+
+  .shopsContainer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0px;
+    @include mobile {
+      gap: 10px;
+      width: 100%;
+      font-size: 16px;
+    }
+    @include tablet {
+      width: 100%;
+      gap: 10px;
+    }
+
+    .shopDetails {
+      width: 90%;
+      display: flex;
+      gap: 200px;
+      justify-content: space-between;
+      align-items: center;
+      @include mobile {
+        gap: 20px;
+        // width: 100%;
+        font-size: 16px;
+      }
+      @include tablet {
+        gap: 20px;
+        // width: 100%;
+      }
+
+      .dates {
+        @include mobile {
+          display: none;
+        }
+      }
+
+      .detailItem {
+        flex: 1;
+        // justify-content: space-between;
+
+        .others {
+          color: gray;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  // align-items: center;
+  justify-content: center;
+}
